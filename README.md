@@ -20,7 +20,7 @@ Fast, informative, and beautiful prompt that integrates seamlessly with the them
 
 <img width="1470" alt="image" src="https://github.com/user-attachments/assets/205a1b38-afb8-40fc-9dcf-6d39d8c48194" />
 
-
+---
 
 ## ⚡️ Quick Start
 
