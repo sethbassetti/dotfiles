@@ -15,8 +15,11 @@ Press Cmd + Enter to instantly toggle WezTerm — similar to the hotkey shortcut
 Leader + p opens a fuzzy launcher for quickly jumping between pre-defined project directories.
 - 🛠️ Minimal, Reproducible Dotfiles<br>
 All config files are tracked and symlinked using a simple setup script — easy to clone and get going on any Mac.
+- 🧩 Integrated Multiplexing Keybindings<br>
+Tmux-style keybindings (via `LEADER` key) for creating and navigating splits and tabs, making WezTerm feel like a full tiling terminal manager.
 - ⭐ Starship Prompt<br>
 Fast, informative, and beautiful prompt that integrates seamlessly with the theme and shell.
+
 
 <img width="1470" alt="image" src="https://github.com/user-attachments/assets/205a1b38-afb8-40fc-9dcf-6d39d8c48194" />
 
