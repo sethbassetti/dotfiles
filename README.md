@@ -5,18 +5,17 @@ This repository contains my effort to create a fully reproducible macOS environm
 ---
 ## ✨ Features
 This setup brings together Zsh, WezTerm, Hammerspoon, and Starship into a cohesive and beautiful terminal environment, with:
-- 🎨 Catppuccin Theming
-
+- 🎨 Catppuccin Theming<br>
 Consistent, pastel-friendly color themes applied across the entire terminal experience
-- 💡 Dynamic Status Bar in WezTerm
+- 💡 Dynamic Status Bar in WezTerm<br>
 Displays workspace, time, and hostname using a custom Powerline-style right status bar, color-matched to your theme.
-- 🚀 Hammerspoon Toggle Shortcut
+- 🚀 Hammerspoon Toggle Shortcut<br>
 Press Cmd + Enter to instantly toggle WezTerm — similar to the hotkey shortcut in iTerm2
--	📁 Project Launcher
+-	📁 Project Launcher<br>
 Leader + p opens a fuzzy launcher for quickly jumping between pre-defined project directories.
-- 🛠️ Minimal, Reproducible Dotfiles
+- 🛠️ Minimal, Reproducible Dotfiles<br>
 All config files are tracked and symlinked using a simple setup script — easy to clone and get going on any Mac.
-- ⭐ Starship Prompt
+- ⭐ Starship Prompt<br>
 Fast, informative, and beautiful prompt that integrates seamlessly with the theme and shell.
 
 <img width="1470" alt="image" src="https://github.com/user-attachments/assets/205a1b38-afb8-40fc-9dcf-6d39d8c48194" />
