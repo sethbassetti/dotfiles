@@ -6,6 +6,7 @@ This repository contains my effort to create a fully reproducible macOS environm
 ## ✨ Features
 This setup brings together Zsh, WezTerm, Hammerspoon, and Starship into a cohesive and beautiful terminal environment, with:
 - 🎨 Catppuccin Theming
+
 Consistent, pastel-friendly color themes applied across the entire terminal experience
 - 💡 Dynamic Status Bar in WezTerm
 Displays workspace, time, and hostname using a custom Powerline-style right status bar, color-matched to your theme.
