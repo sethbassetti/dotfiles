@@ -131,6 +131,14 @@ config.key_tables = {
     },
 }
 
+for i = 1, 8 do
+    table.insert(config.keys, {
+	key = tostring(i),
+	mods = "LEADER",
+	action = wezterm.action.ActivateTab(i - 1),
+    })
+end
+
 
 -- Powerline-like status bar
 -- Replace the old wezterm.on('update-status', ... function with this:
@@ -159,7 +167,7 @@ wezterm.log_info("status update triggered")
   -- darker/lighter depending on whether we're on a dark/light colour
   -- scheme. Let's establish the "from" and "to" bounds of our gradient.
   local gradient_to, gradient_from = bg
-    gradient_from = gradient_to:darken(0.2)
+    gradient_from = gradient_to:darken(0.5)
 
   -- Yes, WezTerm supports creating gradients, because why not?! Although
   -- they'd usually be used for setting high fidelity gradients on your terminal's
