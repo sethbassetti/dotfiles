@@ -1,8 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env zsh
 
 echo "⚠️  This script will overwrite existing dotfiles in your home directory with symlinks from ~/dotfiles."
 echo "Proceeding is destructive. You may lose changes in files like ~/.zshrc or ~/.gitconfig."
-read -p "Type 'y' to continue, or anything else to cancel: " choice
+read "choice?Type 'y' to continue, or anything else to cancel: "
 
 if [[ "$choice" != "y" ]]; then
     echo "Aborted."
@@ -19,6 +19,7 @@ mkdir -p "$ZSH_PLUGIN_DIR"
 plugin_repos=(
     "https://github.com/zsh-users/zsh-autosuggestions.git"
     "https://github.com/zsh-users/zsh-syntax-highlighting.git"
+    "https://github.com/agkozak/zsh-z.git"
 )
 
 echo -e "\n📦 Installing Zsh plugins into $ZSH_PLUGIN_DIR..."
@@ -54,7 +55,7 @@ for item in "${dotfiles[@]}"; do
     ln -s "$(pwd)/$item" "$HOME/$item" 
 done
 
-# Finally, add a symlink to the plugins directory
+source $HOME/.zshrc
 
 echo -e "\n✅ Dotfiles and plugins installed successfully."
 
