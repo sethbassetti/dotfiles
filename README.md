@@ -4,11 +4,6 @@ This repository contains my personalized macOS terminal environment. It includes
 
 ---
 
-## 🧰 Tools Used
-
-
----
-
 ## ⚡️ Quick Start
 
 ### 1. Install Prerequisites
