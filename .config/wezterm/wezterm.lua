@@ -7,7 +7,6 @@ config = wezterm.config_builder()
 
 -- This is where you actually apply the config choices
 
-
 -- Font and color scheme
 config.color_scheme = "catppuccin-mocha"
 config.font = wezterm.font("Maple Mono NF", {weight="Bold", stretch="Normal", style="Italic"})
@@ -119,6 +118,18 @@ config.keys = {
         key = "p",
 	mods = "LEADER",
 	action = projects.choose_project(),
+    },
+    {
+	key = ",",
+	mods = "LEADER",
+	action = wezterm.action.PromptInputLine {
+	    description = "Enter new name for tab",
+	    action = wezterm.action_callback(function(window, pane, line)
+	        if line then
+		    window:active_tab():set_title(line)
+	        end
+	    end),
+	}
     },
 }
 
