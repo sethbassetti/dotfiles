@@ -39,7 +39,7 @@ Fast, informative, and beautiful prompt that integrates seamlessly with the them
 ### 2. Clone this repo and run the setup script
 
 ```bash
-git clone https://github.com/yourname/dotfiles.git ~/dotfiles
+git clone https://github.com/sethbassetti/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 chmod +x ./setup.zsh
 ./setup.zsh
