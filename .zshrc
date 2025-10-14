@@ -19,3 +19,4 @@ alias cd="z"
 
 # Manually call zsh-syntax-highlighting at the end
 source "$HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh"
+eval "$(zoxide init zsh)"

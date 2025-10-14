@@ -19,7 +19,6 @@ mkdir -p "$ZSH_PLUGIN_DIR"
 plugin_repos=(
     "https://github.com/zsh-users/zsh-autosuggestions.git"
     "https://github.com/zsh-users/zsh-syntax-highlighting.git"
-    "https://github.com/agkozak/zsh-z.git"
 )
 
 echo -e "\n📦 Installing Zsh plugins into $ZSH_PLUGIN_DIR..."
@@ -55,8 +54,13 @@ for item in "${dotfiles[@]}"; do
     ln -s "$(pwd)/$item" "$HOME/$item" 
 done
 
+
+# Install zoxide
+brew install zoxide
+
 source $HOME/.zshrc
 
 echo -e "\n✅ Dotfiles and plugins installed successfully."
+
 
 
